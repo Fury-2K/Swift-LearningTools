@@ -502,23 +502,25 @@ import Foundation
 //    print(regulars![1].quantity)
 //}
 
-let queue = OperationQueue()
-queue.name = "RockPunk"
-queue.maxConcurrentOperationCount = 1
-queue.qualityOfService = .default
+//let queue = OperationQueue()
+//queue.name = "RockPunk"
+//queue.maxConcurrentOperationCount = 1
+//queue.qualityOfService = .default
+//
+//func a(completion: @escaping (String, Error?) -> Void) {
+//    queue.addOperation {
+//        print(1)
+//        completion("A", nil)
+//        print(2)
+//    }
+//}
+//
+//a { (asd, error) in
+//    guard let error = error else {
+//        print(asd)
+//        return
+//    }
+//    print(error.localizedDescription)
+//}
 
-func a(completion: @escaping (String, Error?) -> Void) {
-    queue.addOperation {
-        print(1)
-        completion("A", nil)
-        print(2)
-    }
-}
 
-a { (asd, error) in
-    guard let error = error else {
-        print(asd)
-        return
-    }
-    print(error.localizedDescription)
-}
